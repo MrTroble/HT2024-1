@@ -11,5 +11,10 @@ endif()
 
 project ("HT2024" LANGUAGES C)
 
+if(false)
+add_compile_options(-fsanitize=address)
+add_link_options(-fsanitize=address)
+endif()
+
 # Include sub-projects.
 add_subdirectory ("HT2024")

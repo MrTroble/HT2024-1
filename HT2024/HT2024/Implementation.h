@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 struct _HitContext {
-	const char* const start;
+	const char* start;
 	size_t distance;
 };
 typedef struct _HitContext HitContext;
@@ -23,4 +23,12 @@ int initText(const char* const string, TextContext* context) {
 // Returns 0 on error, the amount of hits otherwise
 size_t searchFor(TextContext* context, const char* const query, HitContext** output) {
 	return 0;
+}
+
+void freeHitContext(TextContext* textContext, HitContext* context) {
+
+}
+
+void freeTextContext(TextContext* context) {
+
 }
